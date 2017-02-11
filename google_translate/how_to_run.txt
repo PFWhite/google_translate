@@ -1,0 +1,11 @@
+From the terminal
+
+1 - go to the vagrant directory
+2 - vagrant up, you may need to install virtualbox, vagrant and some plugins that are listed in required_plugins
+3 - vagrant ssh
+4 - cd /google_translate/tokenizers
+5 - cat ../test_data/goldilocks.txt | ./space_tokens.py
+
+and then go see that output generated
+
+note that the path to the test data can be whatever and you can add your own file and run the tokenizer

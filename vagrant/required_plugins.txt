@@ -1,0 +1,8 @@
+vagrant-notify-forwarder (0.5.0)
+  - Version Constraint: > 0
+vagrant-share (1.1.6)
+  - Version Constraint: > 0
+vagrant-triggers (0.5.3)
+  - Version Constraint: > 0
+vagrant-vbguest (0.13.0)
+  - Version Constraint: > 0
