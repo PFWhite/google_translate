@@ -9,6 +9,7 @@ class PCA(object):
         self.X = X
         self.val = numpy.array([])
         self.vec = numpy.array([])
+        self.m = numpy.array([])
 
     def calc(self):
         R = self.X
@@ -16,9 +17,9 @@ class PCA(object):
             w = numpy.array([])
             for j in range(len(self.X)):
                 w = numpy.append(w, float(self.X[j][i]))
-            m = numpy.mean(w)
+            self.m = numpy.append(self.m, numpy.mean(w))
             for j in range(len(w)):
-                w[j] -= m
+                w[j] -= self.m[i]
         S = numpy.cov(R.T)
         eigen = linalg.eig(S)
         self.val = eigen[0]
