@@ -9,8 +9,7 @@ import re
 import config as config
 
 def normalize_token(string):
-    token = string.lower()
-    token = re.sub('[^a-z]+', '', token)
+    token = re.sub('[^a-zA-Z]+', '', string)
     return token
 
 def process_line(line, accumulator):
