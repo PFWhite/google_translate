@@ -31,3 +31,10 @@ class PCA(object):
         self.E = self.vec[:,0:(self.k+1)]
         self.P = numpy.matmul(R,self.E).real
 
+
+#self.P will return principal components.
+#self.E will return eigenvectors used, including imaginary elements
+#self.val will return all eigenvalues
+#self.vec will return all eigenvectors used
+#self.k will return number of eigenvalues used
+#self.m will return means used to calculate stuff in PCA; not useful really, unless given a new word we want to run PCA on. Not really applicable to our project.4
