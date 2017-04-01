@@ -24,10 +24,10 @@ class PCA(object):
         eigen = linalg.eig(S)
         self.val = eigen[0]
         self.vec = eigen[1]
-        k = 0
+        self.k = 0
         for i in range(len(self.val)):
             if self.val[i] > 0.9:
-                k = i
+                self.k = i
         self.E = self.vec[:,0:(k+1)]
         self.P = numpy.matmul(R,self.E).real
 
